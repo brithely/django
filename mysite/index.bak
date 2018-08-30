@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is The HomePage</title>
+</head>
+<body>
+<h1>안녕하세요</h1>
+
+<ul>
+	<li><a href='/polls'>polls</li>
+	<li><a href='/board'>board</li>
+</ul>
+</body>
+
+</html>
