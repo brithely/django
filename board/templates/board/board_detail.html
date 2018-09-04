@@ -1,0 +1,33 @@
+{% extends 'board/layout.html' %}
+
+{% block content %}
+    <div class="board">
+        {% if board.created %}
+        {% endif %}
+        <h1>{{ board.title }}</h1>
+	{% if isCreatedUser %}
+	<a class="btn btn-default" href="{% url 'board:board_edit' numid=board.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+	{% endif %}
+        <p>{{ board.content|linebreaksbr }}</p>
+        <div class="date">
+                {{ board.created }}
+        </div>
+    </div>
+	<div class="comment">
+		<table class="table table-condensed">
+		{% for comment in comments%}
+			<tr>
+				<td>{{comment.comment}}</td>
+				<td>{{comment.created_user}}</td>
+				<td>{{comment.created}}</td>
+			</tr>	
+		{% endfor %}
+		</table>
+		<form method="POST">
+		{% csrf_token %}
+		{{ form.as_p }}
+        	<button type="submit" class="save btn btn-default">Submit</button>
+		</form>
+	</div>
+
+{% endblock %}

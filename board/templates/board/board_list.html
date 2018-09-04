@@ -1,0 +1,26 @@
+{% extends 'board/layout.html' %}
+
+{% block content %}
+	{% if request.user.is_authenticated %}
+	<a href="{% url 'board:board_new' %}" class="top-menu"><span class="glyphicon glyphicon-pencil"></span></a>
+	{% endif %}
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<td>num</td>
+				<td>title</td>
+				<td>created</td>
+				<td>created_user</td>
+			</tr>
+		</thead>
+		<tbody>
+	{% for board in boards %}
+			<tr>
+				<td>{{ board.num_id }}</td>
+				<td><a href="/board/{{ board.num_id }}">{{ board.title }} </a></td>
+				<td>{{ board.created }}</td>
+				<td>{{ board.created_user }} </td>
+	{% endfor %}
+		</tbody>
+	</table>
+{% endblock%}

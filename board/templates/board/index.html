@@ -1,22 +1,27 @@
+{% load static %}
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Jungboro Blog</title>
+        <link rel="stylesheet" href="{% static 'css/bootstrap-4.1.3.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/board.css' %}">
     </head>
     <body>
-        <div>
-            <h1><a href="">Django Girls Blog</a></h1>
+        <div class="page-header">
+                <h1><a href="/board">Jungboro Homepage</a></h1>
         </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        <div class="content container">
+                <div class="row">
+                        <div class="col-md-8">
+                                {% for board in boards %}
+                                 <div class="date">
+                                      {{ board.created }}
+                                 </div>
+                                <h1>{{ board.title }} </h1>
+                                <p>{{ board.content }} </p>
+                                {% endfor %}
+                        </div>
+                </div>
         </div>
     </body>
 </html>
+

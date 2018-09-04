@@ -1,0 +1,9 @@
+{% extends 'board/layout.html' %}
+
+{% block content %}
+	{% for board in boards %}
+	<h1><a href="/board/{{ board.num_id }}">{{ board.title }} </a></h1>
+	<p> {{ board.content }} </p>
+	<div class=date>{{ board.created }}</div>
+	{% endfor %}
+{% endblock%}

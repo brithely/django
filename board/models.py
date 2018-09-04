@@ -1,18 +1,26 @@
 from django.db import models
+from django.contrib import admin
+from django.conf import settings
 import datetime
 
 # Create your models here.
 
-class User(models.Model):
-	id_email = models.CharField(max_length=100, null=False, primary_key=True)
-	password = models.CharField(max_length=128, null=False)
-	user_name = models.CharField(max_length=15, null=False)
-	created = models.DateTimeField(auto_now_add=True)
-	last_login = models.DateTimeField()
-
 class Board(models.Model):
 	num_id = models.AutoField(primary_key=True)
-	cont_nm = models.CharField(max_length=100, null=False)
+	title = models.CharField(max_length=100, null=False)
 	content = models.TextField(null=False)
 	created = models.DateTimeField(auto_now_add=True)
-	created_user = models.CharField
+	created_user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+	def __str__(self):
+		return self.title
+
+class Comment(models.Model):
+	num_board_id = models.ForeignKey(Board, on_delete=models.CASCADE)
+	num_com_id = models.AutoField(primary_key=True)
+	comment = models.CharField(max_length=255, null=False)
+	created = models.DateTimeField(auto_now_add=True)
+	created_user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+	
+	def __str__(self):
+		return self.num_board_id
