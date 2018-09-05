@@ -11,6 +11,8 @@ urlpatterns = [
 	path('board/', views.board, name='board'),
 	path('board/new/', views.board_new, name='board_new'),
 	path('board/<numid>/', views.board_detail, name='board_detail'),
-	path('board/<numid>/edit', views.board_edit, name='board_edit')
+	path('board/<numid>/edit', views.board_edit, name='board_edit'),
+	path('board/<numid>/delete', views.board_delete, name='board_delete'),
+	path('board/<numid>/comment/<comid>/detelte', views.comment_delete, name='comment_delete')
 ]
 

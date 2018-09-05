@@ -7,6 +7,7 @@
         <h1>{{ board.title }}</h1>
 	{% if isCreatedUser %}
 	<a class="btn btn-default" href="{% url 'board:board_edit' numid=board.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+	<a class="btn btn-default" href="{% url 'board:board_delete' numid=board.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
 	{% endif %}
         <p>{{ board.content|linebreaksbr }}</p>
         <div class="date">
@@ -20,14 +21,22 @@
 				<td>{{comment.comment}}</td>
 				<td>{{comment.created_user}}</td>
 				<td>{{comment.created}}</td>
+				{% if comment.isCreatedUser %}
+				<td><a class="btn btn-default" href="{% url 'board:comment_delete' numid=comment.num_board_id_id comid=comment.num_com_id %}"><span class="glyphicon glyphicon-remove"></span></a></td>
+				{% else %}
+				<td> </td>
+				{% endif %}
+
 			</tr>	
 		{% endfor %}
 		</table>
+		{% if user %}
 		<form method="POST">
 		{% csrf_token %}
 		{{ form.as_p }}
         	<button type="submit" class="save btn btn-default">Submit</button>
 		</form>
+		{% endif %}
 	</div>
 
 {% endblock %}

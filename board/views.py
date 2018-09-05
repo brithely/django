@@ -18,16 +18,28 @@ def board(request):
 
 def board_detail(request, numid):
 	board = Board.objects.get(pk=numid)
-	user = User.objects.get(id=int(request.user.id))
+	try:
+		user = User.objects.get(id=int(request.user.id))
+	except:
+		user = False
 	form = CommentForm
 	try:
 		comments = Comment.objects.filter(num_board_id=numid)
 	except Comment.DoesNotExist:
-		comments = False;
+		comments = False
+
 	if str(request.user.username) == str(board.created_user):
 		isCreatedUser = True
 	else:
 		isCreatedUser = False
+
+	for comment in comments:
+		if str(request.user.username) == str(comment.created_user):
+			comment.isCreatedUser = True
+		else:
+			comment.isCreatedUser = False
+
+
 	if request.method == "POST":
 		form = CommentForm(request.POST)
 		if form.is_valid():
@@ -39,7 +51,7 @@ def board_detail(request, numid):
 			return redirect('board:board_detail', numid=board.num_id)
 
 
-	return render(request, 'board/board_detail.html', {'isCreatedUser': isCreatedUser, 'board': board, 'comments':comments, 'form':form})
+	return render(request, 'board/board_detail.html', {'isCreatedUser': isCreatedUser, 'board': board, 'comments':comments, 'form':form, 'user': user})
 def board_edit(request, numid):
 	board = get_object_or_404(Board, pk=numid)
 
@@ -74,6 +86,20 @@ def board_new(request):
 		form = BoardForm()
 	return render(request, 'board/board_edit.html', {'form' : form })
 
+def board_delete(request, numid):
+	board = Board.objects.get(pk=numid)
+	board.delete()
+	return redirect('board:board')
+
+def comment_delete(request, numid, comid):
+	try:
+		comment = Comment.objects.get(num_com_id=comid)
+	except Comment.DoesNotExist:
+		comment = False
+	if comment:
+		comment.delete()
+	return redirect('board:board_detail', numid=numid)
+
 ################################USER############################
 def signup(request):
 	if request.method == "POST":
@@ -107,6 +133,7 @@ def signin(request):
 def signout(request):
 	logout(request)
 	return redirect('board:index');
+
 
 #############################Comment##############################
 
