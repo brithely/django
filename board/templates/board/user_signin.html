@@ -1,7 +1,10 @@
 {% extends 'board/layout.html' %}
 
 {% block content %}
-    <h1>Singin</h1>
+    <h1>SignIn</h1>
+    	{% if error %}
+        <p>Your username and password didn't match. Please try again.</p>
+    	{% endif %}
 	<form method="POST" class="post-form">
 	{% csrf_token %}
 	{{ form.as_p }}

@@ -13,8 +13,43 @@ def index(request):
 	return render(request, 'board/board_index.html', {'boards': boards}) 
 
 def board(request):
-	boards = Board.objects.all()
-	return render(request, 'board/board_list.html', {'boards': boards})
+	boards = Board.objects.all().order_by('-created')
+	count = boards.count()
+	print(count)
+	page = range(1, int(count/1)+1)
+	print(page)
+	return render(request, 'board/board_list.html', {'boards': boards, 'page':page})
+
+def board_page(request, pagenum):
+	pageRow = 5
+	maxpage = int(pagenum)*pageRow
+	minpage = int(pagenum)*pageRow-5;
+	boards = Board.objects.all().order_by('-created')[minpage:maxpage]
+	pages = Board.objects.all()
+	count = pages.count()
+
+	if int(pagenum)%5 == 0:
+		pagecount = int(int(pagenum)/pageRow)
+		maxcount = int(pagecount)*pageRow
+		mincount = maxcount-5+1
+	else:
+		pagecount = int(int(pagenum)/pageRow)+1
+		maxcount = int(pagecount)*pageRow
+		mincount = maxcount-5+1
+	if maxcount*pageRow > int(count):
+		maxcount= int(int(count)/pageRow)+1
+	if int(pagecount) > int(count):
+		pagecount = count
+
+	if count >= maxpage:
+		isMax = True
+	else:
+		isMax = False
+	prepage = int(pagenum)-1
+	nextpage = int(pagenum)+1
+
+	page = range(mincount, maxcount+1)
+	return render(request, 'board/board_list.html', {'boards': boards, 'page':page, 'nextpage':nextpage, 'prepage':prepage, 'isMax': isMax})
 
 def board_detail(request, numid):
 	board = Board.objects.get(pk=numid)
@@ -59,7 +94,6 @@ def board_edit(request, numid):
 		form = BoardForm(request.POST, instance=board)
 		if form.is_valid():
 			board = form.save(commit=False)
-			board.created = timezone.now()
 			board.save()
 			return redirect('board:board_detail', numid=board.num_id)
 
@@ -80,7 +114,7 @@ def board_new(request):
 			post.created_user = user
 			post.save()
 			boards = Board.objects.all()
-			return render(request, 'board/board_list.html', {'boards': boards}) 
+			return redirect('board:board_page', pagenum=1) 
 		
 	else:
 		form = BoardForm()
@@ -116,6 +150,7 @@ def signup(request):
 
 def signin(request):
 	if request.method == "POST":
+		form = UserSigninForm()
 		username = request.POST['username']
 		password = request.POST['password']
 		user = authenticate(request, username=username, password=password)
@@ -124,11 +159,13 @@ def signin(request):
 			print(request.user.is_authenticated)
 			return redirect('board:index');
 		else:
-			return HttpResponse('Error')
+			error = True
+			return render(request, 'board/user_signin.html', {'form':form, 'error':error})
 
 	else:
 		form = UserSigninForm()
-	return render(request, 'board/user_signin.html', {'form': form})
+		error = False
+	return render(request, 'board/user_signin.html', {'form': form, 'error':error})
 
 def signout(request):
 	logout(request)

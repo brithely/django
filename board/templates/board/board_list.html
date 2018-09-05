@@ -7,20 +7,41 @@
 	<table class="table table-hover">
 		<thead>
 			<tr>
-				<td>num</td>
-				<td>title</td>
-				<td>created</td>
-				<td>created_user</td>
+				<td>번호</td>
+				<td>제목</td>
+				<td>작성시간</td>
+				<td>작성자</td>
 			</tr>
 		</thead>
-		<tbody>
+		<tbody class='content-list'>
 	{% for board in boards %}
 			<tr>
-				<td>{{ board.num_id }}</td>
-				<td><a href="/board/{{ board.num_id }}">{{ board.title }} </a></td>
-				<td>{{ board.created }}</td>
-				<td>{{ board.created_user }} </td>
+				<td style="width:10%;">{{ board.num_id }}</td>
+				<td style="display: inline-block; width:400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" ><a href="/board/{{ board.num_id }}">{{ board.title }}</a></td>
+				<td style="width:200px"><div class='date'>{{ board.created|date:"m-d H:i:s"}}</div></td>
+				<td style="width:15%;">{{ board.created_user }} </td>
 	{% endfor %}
 		</tbody>
 	</table>
+	<div class="centerd">
+                <ul class="pagination">
+			{% if prepage >= 1 %}
+			<li>
+				<a href="/board/page/{{prepage}}" aria-label="Previous">
+				<span aria-hidden="true">&laquo;</span></a>
+			</li>
+			{% else %}
+			<li></li>
+			{% endif %}
+			{% for i in page %}
+			<li><a href="/board/page/{{i}}">{{i}}</a></li>
+			{% endfor %}
+			{% if isMax %}
+			<li>
+				<a href="/board/page/{{nextpage}}" aria-label="Next">
+				<span aria-hidden="true">&raquo;</span></a>
+			</li>
+			{% endif %}
+                </ul>
+	</div>
 {% endblock%}

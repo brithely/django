@@ -2,18 +2,21 @@
 
 {% block content %}
     <div class="board">
-        {% if board.created %}
-        {% endif %}
         <h1>{{ board.title }}</h1>
-	{% if isCreatedUser %}
-	<a class="btn btn-default" href="{% url 'board:board_edit' numid=board.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-	<a class="btn btn-default" href="{% url 'board:board_delete' numid=board.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
-	{% endif %}
+	<hr>
         <p>{{ board.content|linebreaksbr }}</p>
-        <div class="date">
+	<hr>
+        	<div class="date">
+		{% if isCreatedUser %}
+		<a class="btn btn-default" href="{% url 'board:board_edit' numid=board.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+		<a class="btn btn-default" href="{% url 'board:board_delete' numid=board.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+		{% endif %}
                 {{ board.created }}
-        </div>
-    </div>
+	        </div>
+    	</div>
+	<br>
+	<br>
+	<br>
 	<div class="comment">
 		<table class="table table-condensed">
 		{% for comment in comments%}

