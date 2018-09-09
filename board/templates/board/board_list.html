@@ -4,6 +4,7 @@
 	{% if request.user.is_authenticated %}
 	<a href="{% url 'board:board_new' %}" class="top-menu"><span class="glyphicon glyphicon-pencil"></span></a>
 	{% endif %}
+
 	<table class="table table-hover">
 		<thead>
 			<tr>
@@ -16,10 +17,10 @@
 		<tbody class='content-list'>
 	{% for board in boards %}
 			<tr>
-				<td style="width:10%;">{{ board.num_id }}</td>
-				<td style="display: inline-block; width:400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" ><a href="/board/{{ board.num_id }}">{{ board.title }}</a></td>
-				<td style="width:200px"><div class='date'>{{ board.created|date:"m-d H:i:s"}}</div></td>
-				<td style="width:15%;">{{ board.created_user }} </td>
+				<td class="col-md-1">{{ board.num_id }}</td>
+				<td class="col-md-7"><a href="/board/{{ board.num_id }}/">{{ board.title }}</a></td>
+				<td class="col-md-3"><div class='date'>{{ board.created|date:"m-d H:i:s"}}</div></td>
+				<td class="col-md-1">{{ board.created_user }} </td>
 	{% endfor %}
 		</tbody>
 	</table>

@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 
 from .models import Board, Comment
-from .forms import BoardForm, UserSignupForm, UserSigninForm, CommentForm
+from .forms import BoardForm, UserSignForm, CommentForm
 # Create your views here.
 
 def index(request):
@@ -75,6 +75,9 @@ def board_detail(request, numid):
 			comment.isCreatedUser = False
 
 
+	return render(request, 'board/board_detail.html', {'isCreatedUser': isCreatedUser, 'board': board, 'comments':comments, 'form':form, 'user': user})
+
+
 	if request.method == "POST":
 		form = CommentForm(request.POST)
 		if form.is_valid():
@@ -85,8 +88,9 @@ def board_detail(request, numid):
 			comment.save()
 			return redirect('board:board_detail', numid=board.num_id)
 
+	if request.method == "DELETE":
+		print("METHOD TEST")
 
-	return render(request, 'board/board_detail.html', {'isCreatedUser': isCreatedUser, 'board': board, 'comments':comments, 'form':form, 'user': user})
 def board_edit(request, numid):
 	board = get_object_or_404(Board, pk=numid)
 
@@ -123,7 +127,7 @@ def board_new(request):
 def board_delete(request, numid):
 	board = Board.objects.get(pk=numid)
 	board.delete()
-	return redirect('board:board')
+	return redirect('board:board_page', pagenum=1)
 
 def comment_delete(request, numid, comid):
 	try:
@@ -137,7 +141,7 @@ def comment_delete(request, numid, comid):
 ################################USER############################
 def signup(request):
 	if request.method == "POST":
-		form = UserSignupForm(request.POST)
+		form = UserSignForm(request.POST)
 		if form.is_valid():
 			post = form.save(commit=False)
 			post.date_joined = timezone.now()
@@ -145,12 +149,12 @@ def signup(request):
 			post.save()
 			return redirect('board:index') 
 	else:
-		form = UserSignupForm()
+		form = UserSignForm()
 	return render(request, 'board/user_signup.html', {'form' : form})
 
 def signin(request):
 	if request.method == "POST":
-		form = UserSigninForm()
+		form = UserSignForm()
 		username = request.POST['username']
 		password = request.POST['password']
 		user = authenticate(request, username=username, password=password)
@@ -163,16 +167,47 @@ def signin(request):
 			return render(request, 'board/user_signin.html', {'form':form, 'error':error})
 
 	else:
-		form = UserSigninForm()
+		form = UserSignForm()
 		error = False
 	return render(request, 'board/user_signin.html', {'form': form, 'error':error})
 
 def signout(request):
 	logout(request)
-	return redirect('board:index');
+	return redirect('board:index')
 
 
 #############################Comment##############################
 
 
+############################Search###############################
 
+def search_page(request, search, pagenum):
+        pageRow = 5
+        maxpage = int(pagenum)*pageRow
+        minpage = int(pagenum)*pageRow-5;
+        boards = Board.objects.filter(title__contains=search).order_by('-created')[minpage:maxpage]
+        pages = Board.objects.filter(title__contains=search)
+        count = pages.count()
+
+        if int(pagenum)%5 == 0:
+                pagecount = int(int(pagenum)/pageRow)
+                maxcount = int(pagecount)*pageRow
+                mincount = maxcount-5+1
+        else:
+                pagecount = int(int(pagenum)/pageRow)+1
+                maxcount = int(pagecount)*pageRow
+                mincount = maxcount-5+1
+        if maxcount*pageRow > int(count):
+                maxcount= int(int(count)/pageRow)+1
+        if int(pagecount) > int(count):
+                pagecount = count
+
+        if count >= maxpage:
+                isMax = True
+        else:
+                isMax = False
+        prepage = int(pagenum)-1
+        nextpage = int(pagenum)+1
+
+        page = range(mincount, maxcount+1)
+        return render(request, 'board/board_list.html', {'boards': boards, 'page':page, 'nextpage':nextpage, 'prepage':prepage, 'isMax': isMax})

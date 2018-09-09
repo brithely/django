@@ -9,7 +9,7 @@ class BoardForm(forms.ModelForm):
 		model = Board
 		fields = ('title', 'content',)
 
-class UserSignupForm(forms.ModelForm):
+class UserSignForm(forms.ModelForm):
 	password=forms.CharField(widget=forms.PasswordInput())
 	confirm_password=forms.CharField(widget=forms.PasswordInput())
 
@@ -18,7 +18,7 @@ class UserSignupForm(forms.ModelForm):
 		fields = ('username', 'email', 'password',)
 	
 	def clean(self):
-		cleaned_data = super(UserSignupForm, self).clean()
+		cleaned_data = super(UserSignForm, self).clean()
 		password = cleaned_data.get('password')
 		confirm_password = cleaned_data.get('confirm_password')
 
@@ -26,14 +26,6 @@ class UserSignupForm(forms.ModelForm):
 			raise forms.ValidationError(
 				"password and confirm_password does not match"
 			)
-
-class UserSigninForm(forms.ModelForm):
-
-	class Meta:
-		model = User
-		fields = ('username', 'password',)
-		widgets = {'password': forms.PasswordInput()}
-	
 		
 
 class CommentForm(forms.ModelForm):
