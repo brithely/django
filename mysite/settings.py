@@ -77,14 +77,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-	'ENGINE': 'mysql.connector.django',
-	'NAME': 'TEST',
-	'USER': 'test',
-	'PASSWORD': 'eoflal72!@',
-	'HOST': '115.68.221.96',
-	'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -129,5 +123,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Cookie Setting
-SESSION_COOKIE_AGE = 300 
+SESSION_COOKIE_AGE = 300
 SESSION_SAVE_EVERY_REQUEST = True
