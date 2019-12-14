@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts'
+    'accounts',
+    'front',
     'boards',
     'utilities',
 ]
@@ -126,3 +127,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Cookie Setting
 SESSION_COOKIE_AGE = 300
 SESSION_SAVE_EVERY_REQUEST = True
+
+AUTH_USER_MODEL = 'accounts.Account'
+
+PROJECT_TEMPLATES_DIRS = os.path.join(PROJECT_ROOT, 'templates')
