@@ -3,22 +3,19 @@ from django.http import HttpResponse
 from django.utils import timezone
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
+from django.views.generic import TemplateView
+from django.views.generic import ListView
 
 from .models import Board, Comment
 from .forms import BoardForm, UserSignForm, CommentForm
 # Create your views here.
 
-def index(request):
-	boards = Board.objects.all().order_by('-created')[:3]
-	return render(request, 'board/board_index.html', {'boards': boards}) 
 
-def board(request):
-	boards = Board.objects.all().order_by('-created')
-	count = boards.count()
-	print(count)
-	page = range(1, int(count/1)+1)
-	print(page)
-	return render(request, 'board/board_list.html', {'boards': boards, 'page':page})
+class BoardListView(ListView):
+	template_name = "board/board_list.html"
+	queryset = Board.objects.all()
+	context_object_name = 'board_list'
+
 
 def board_page(request, pagenum):
 	pageRow = 5

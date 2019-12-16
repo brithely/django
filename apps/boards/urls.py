@@ -26,6 +26,5 @@ urlpatterns = [
 	##############SEARCH########################
 
 	path('board/<search>/page/<pagenum>', views.search_page, name='search_page')
-
+	
 ]
-
